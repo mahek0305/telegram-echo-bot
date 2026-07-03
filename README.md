@@ -11,8 +11,6 @@ Whenever a user sends a message to the Telegram bot, the workflow replies with t
 - Beginner-friendly n8n workflow
 - Easy to import and configure
 
-## Workflow Screenshort
-![Telegram Echo Bot Workflow](./screenshorts/telegram-bot.png)
 
 ## Workflow
 
