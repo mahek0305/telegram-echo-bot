@@ -11,59 +11,53 @@ Whenever a user sends a message to the Telegram bot, the workflow replies with t
 - Beginner-friendly n8n workflow
 - Easy to import and configure
 
+## Workflow Screenshort
+
+![Telegram Echo Bot Workflow](screenshorts/telegram-bot.png)
+
 ## Workflow
 
 ```
-User
-   │
-   ▼
-Telegram Bot
-   │
-   ▼
-Telegram Trigger (n8n)
-   │
-   ▼
+Telegram Trigger
+        │
+        ▼
 Send Echo Reply
-   │
-   ▼
-User receives the same message
+        │
+        ▼
+Replies with the same message received
 ```
 
 ## Requirements
 
-- n8n (latest recommended)
+- n8n
 - Telegram Bot created using @BotFather
 - Telegram Bot Token
 
 ## Importing the Workflow
 
-1. Download the workflow JSON file.
+1. Download the `telegram-echo-bot.json` workflow.
 2. Open your n8n instance.
 3. Click **Import from File**.
-4. Select the JSON file.
+4. Select the workflow JSON file.
 5. Add your Telegram credentials.
-6. Save the workflow.
-7. Activate the workflow.
+6. Save and activate the workflow.
 
 ## Configuration
 
-After importing:
-
-1. Open **Telegram Trigger**.
-2. Create or select your Telegram credentials.
-3. Open **Send Echo Reply**.
-4. Select the same Telegram credentials.
-5. Activate the workflow.
+1. Open **Telegram Trigger** and connect your Telegram credentials.
+2. Open **Send Echo Reply** and use the same credentials.
+3. Activate the workflow.
+4. Send a message to your Telegram bot—the bot will reply with the exact same message.
 
 ## Security
 
 This repository does **not** contain:
 
-- API Keys
-- Telegram Bot Tokens
+- API keys
+- Telegram Bot tokens
 - Passwords
 - Secrets
-- Personal Credentials
+- Personal credentials
 
 All credentials must be added after importing the workflow.
 
@@ -71,8 +65,10 @@ All credentials must be added after importing the workflow.
 
 ```
 .
+├── README.md
 ├── telegram-echo-bot.json
-└── README.md
+└── screenshots
+    └── telegram-bot.png
 ```
 
 ## License
